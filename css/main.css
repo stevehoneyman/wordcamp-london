@@ -1,0 +1,205 @@
+@font-face {
+	font-family: 'Coltrane';
+	src: url('../fonts/Coltrane-Regular2.woff2') format('woff2'),
+    url('../fonts/Coltrane-Regular2.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 1vw;
+}
+
+body {
+	margin-top: 3rem;
+	background: #ccc;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* =================== LAYOUT ================== */
+
+#container {
+	width: 100%;
+	max-width: 1200px;
+	height: 602px;
+	margin: 0 auto;
+}
+
+header:before,
+header,
+header:after {
+	width: 1200px;
+	height: 602px;	
+	padding-top: 4.75rem;
+	background-repeat: no-repeat; 
+}
+
+header:before {
+	position: absolute;
+	content: '';
+	opacity: 0.31; /* out put as inline style */
+	z-index: 100;
+}
+
+header {
+	position: relative;
+	display: grid;  
+	grid-template-columns: 1fr 1fr; 
+	z-index: 200;
+}
+
+header:after {
+	position: absolute;
+	content: '';
+	z-index: 300;
+}
+
+.drummer-container {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+
+.drummer-image:before,
+.drummer-image,
+.drummer-image:after {
+	width: 525px;
+	height: 533px;
+	background-repeat: no-repeat; 
+}
+
+.drummer-image:before {
+	position: absolute;
+	content: '';
+	z-index: 500;
+}
+
+.drummer-image {
+	position: relative;
+	grid-column: 1/ 2;
+	grid-row: 1 / 3;
+	margin-top: -9%;
+	margin-left: 3%; 
+	z-index: 600;
+}
+
+.drummer-image:after {
+	position: absolute;
+	content: '';
+	z-index: 700;
+}
+
+.sine-wave {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	padding-left: 35%;
+	margin-top: 1px; 
+/*	mix-blend-mode: screen; */
+	overflow: hidden;
+	z-index: 400;
+}
+
+.bottom-border {
+	position: absolute;
+	bottom: 0;
+/*	mix-blend-mode: multiply;*/
+	z-index: 800;
+/*
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+	align-self: end;	
+*/	
+}
+
+/* ================== TYPOGRAPHY ================ */
+
+h1 {
+	position: relative;
+	font-family: Coltrane;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 0.75;
+	z-index:  1000
+}
+
+.give {
+	margin-left: 9.45%;
+	font-size: 3.9em;
+	color: #fff;
+	letter-spacing: -0.015em;
+}
+
+.the {
+	position: absolute;
+	margin-top: -0.9%;
+	margin-left: 2%;
+	font-size: 4.9em;
+	color: #fff;
+}
+
+.drummer {
+	margin-left: 13.4%;
+	font-size: 4.5em;
+	color: #ff0000;
+	line-height: 0.65;
+	letter-spacing: 0.3px;
+}
+
+.some {
+	margin-left: 35.5%;
+	font-size: 5.5em;
+	color: #fff;
+	line-height: 0.77;
+	letter-spacing: 0.75px;
+}
+
+/* --------- Locks ---------- */
+
+@media (min-width: 1200px) {
+	
+	.give {
+		font-size: 131.033px;
+	}
+
+	.the {
+		font-size: 164.633px;
+	}
+
+	.drummer {
+		font-size: 151.2px;
+	}
+	
+	.some {
+		font-size: 184.8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
