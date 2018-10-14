@@ -1,2 +1,3 @@
 # wordcamp-london
-Created for WordCamp London, this demo shows how to use Advanced Custom Fields to control and change background and inline images, background colour, blend-modes, rotate and opacity on page elements.
+These are the PHP and CSS files used to create the editable hero image I demo'd as part of my lightening talk at WordCamp London this April.
+The code for the hero image is contained in header.php with reset and base styles in main.css.
